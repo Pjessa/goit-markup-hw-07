@@ -1,0 +1,53 @@
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-top: 0;
+}
+.about__hidden-title {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+}
+.about__title {
+    margin: -1px;
+}
+.about__list-item:last-child {
+    margin-right: 0;
+}
+.about__list-link {
+    width: 100%;
+    height: 120px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--button-background-color);
+}
+.about__list-benefits {
+    margin-bottom: 30px;
+}
+.about__list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.about__list-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+.about__list-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--secondary-color);
+}
+.about__list {
+    display: flex;
+}
