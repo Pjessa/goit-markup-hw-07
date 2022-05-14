@@ -198,7 +198,7 @@ img {
     background-position: center;
     background-size: cover;
 }
-.hero-title {
+.hero__title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -206,11 +206,13 @@ img {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--hero-title-color);
-    margin-bottom: 30px;
     padding-right: 235px;
     padding-left: 235px;
 }
-.hero-btn {
+.hero__title-top {
+    margin-bottom: 30px;
+}
+.hero__btn {
     display: inline-block;
     font-family: inherit;
     font-weight: 700;
@@ -227,8 +229,8 @@ img {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.hero-btn:hover,
-.hero-btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
     background-color: var(--button-background-hover);
 }
 
@@ -237,7 +239,7 @@ img {
     padding-bottom: 94px;
     margin-top: 0;
 }
-.visually-hidden {
+.about__hidden-title {
     position: absolute;
     white-space: nowrap;
     width: 1px;
@@ -247,12 +249,14 @@ img {
     padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
+}
+.about__title {
     margin: -1px;
 }
-.list-item:last-child {
+.about__list-item:last-child {
     margin-right: 0;
 }
-.list-link {
+.about__list-link {
     width: 100%;
     height: 120px;
     border-radius: 4px;
@@ -260,12 +264,14 @@ img {
     justify-content: center;
     align-items: center;
     background-color: var(--button-background-color);
+}
+.about__list-benefits {
     margin-bottom: 30px;
 }
-.list-item:not(:last-child) {
+.about__list-item:not(:last-child) {
     margin-right: 30px;
 }
-.list-title {
+.about__list-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -273,12 +279,12 @@ img {
     color: var(--main-color);
     margin-bottom: 10px;
 }
-.list-text {
+.about__list-text {
     font-size: 14px;
     line-height: 1.71;
     color: var(--secondary-color);
 }
-.list-hidden {
+.about__list {
     display: flex;
 }
 
@@ -286,18 +292,18 @@ img {
     padding-top: 0;
     padding-bottom: 94px;
 }
-.gallery-title {
+.gallery__title {
     color: var(--main-color);
     margin-bottom: 50px;
 }
-.gallery-list {
+.gallery__list {
     display: flex;
 }
 
-.gallery-item:not(:last-child) {
+.gallery__list-item:not(:last-child) {
     margin-right: 30px;
 }
-.gallery-list-text {
+.gallery__list-text {
     min-width: 205px;
     font-weight: 700;
     font-size: 14px;
@@ -308,7 +314,7 @@ img {
     color: var(--hero-title-color);
 }
 
-.box-thumb {
+.gallery__list-thumb {
     position: absolute;
     bottom: 0;
     left: 0;
