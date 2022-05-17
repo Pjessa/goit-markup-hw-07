@@ -21,16 +21,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: var(--hero-title-color);
     fill: var(--main-color);
-}
-.data-modal-close:hover,
-.data-modal-close:focus {
-    fill: var(--logo-color);
+    &:hover,
+    &:focus {
+        fill: var(--logo-color);
+    }
 }
 .modal-title {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+    @include font(700, 20px, 1.15, 0.03em);
     color: #212121;
     margin-bottom: 12px;
     width: 100%;
@@ -62,9 +59,7 @@
     margin-bottom: 4px;
 }
 .form-field::placeholder {
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(null, 12px, 1.17, 0.01em);
     color: rgba(117, 117, 117, 0.5);
 }
 .form-icon {
@@ -76,10 +71,6 @@
     background-color: #ffffff;
     color: #212121;
 }
-.form-text:hover,
-.form-text:focus {
-    border: 1px solid #2196f3;
-}
 .form-input {
     width: 448px;
     height: 40px;
@@ -87,10 +78,10 @@
     border-radius: 4px;
     margin-bottom: 10px;
     padding-left: 10px;
-}
-.form-input:hover,
-.form-input:focus {
-    border: 1px solid #2196f3;
+    &:hover,
+    &:focus {
+        border: 1px solid #2196f3;
+    }
 }
 .form-input:hover ~ .form-link {
     fill: var(--logo-color);
@@ -110,9 +101,7 @@
 .conditions-block label {
     font-size: 20px;
     margin-left: 10px;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(null, 14px, 1.71, 0.03em);
     color: #757575;
 }
 .conditions-link {
@@ -159,9 +148,7 @@
     background-origin: border-box;
 }
 .form-label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
+    @include font(null, 12px, 1.17, 0.01em);
     color: #757575;
     display: block;
 }
@@ -173,21 +160,19 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     font-family: inherit;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
+    @include font(400, 14px, 1.14, 0.01em);
     resize: none;
     margin-bottom: 10px;
+    &:hover,
+    &:focus {
+        border: 1px solid #2196f3;
+    }
 }
 
 .form-btn {
     display: inline-block;
     font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
+    @include font(700, 16px, 1.88, 0.06em);
     cursor: pointer;
     color: var(--hero-title-color);
     background-color: var(--logo-color);
@@ -200,8 +185,8 @@
     margin-left: 124px;
     margin-right: 124px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.form-btn:hover,
-.form-btn:focus {
-    background-color: var(--button-background-hover);
+    &:hover,
+    &:focus {
+        background-color: var(--button-background-hover);
+    }
 }

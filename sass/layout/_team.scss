@@ -8,9 +8,7 @@
     margin-bottom: 50px;
 }
 .team__item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(500, 16px, 1.19, null);
     text-align: center;
     color: var(--main-color);
     max-width: 270px;
@@ -27,8 +25,7 @@
     margin-bottom: 10px;
 }
 .team__text {
-    font-size: 16px;
-    line-height: 1.19;
+    @include font(null, 16px, 1.19, null);
     text-align: center;
     color: var(--secondary-color);
     margin-bottom: 16px;
@@ -64,9 +61,9 @@
 .soc__link--team {
     background-color: var(--hero-title-color);
     fill: #afb1b8;
-}
-.soc__link--team:hover,
-.soc__link--team:focus {
-    background-color: var(--logo-color);
-    fill: var(--hero-title-color);
+    &:hover,
+    &:focus {
+        background-color: var(--logo-color);
+        fill: var(--hero-title-color);
+    }
 }

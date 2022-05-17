@@ -15,10 +15,7 @@
 }
 .gallery__list-text {
     min-width: 205px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+    @include font(700, 14px, 1.14, 0.03em);
     text-transform: uppercase;
 
     color: var(--hero-title-color);
