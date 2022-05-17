@@ -20,7 +20,7 @@
     @include font(500, 14px, 1.14, 0.02em);
     color: var(--secondary-color);
 }
-.logo--footer {
+.logo__part--footer {
     color: var(--hero-title-color);
 }
 .address {
@@ -59,10 +59,31 @@
     margin-bottom: 20px;
     color: var(--hero-title-color);
 }
-.soc__icon--footer {
+.footer__soc__list {
+    display: flex;
+    justify-content: center;
+}
+.footer__soc__item {
+    margin-right: 10px;
+}
+.footer__soc__item:last-child {
+    margin-right: 0px;
+}
+.footer__soc__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__soc__icon--footer {
     fill: currentColor;
 }
-.soc__link--footer {
+.footer__soc__link--footer {
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--hero-title-color);
     &:hover,

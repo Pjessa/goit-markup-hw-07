@@ -108,12 +108,12 @@ body {
   color: var(--main-color);
 }
 
-.menu {
-  display: flex;
+.navigation__menu__list {
+  margin-left: 93px;
 }
 
-.menu__list {
-  margin-left: 93px;
+.menu {
+  display: flex;
 }
 
 .menu__item {
@@ -158,9 +158,6 @@ body {
 
 .contacts {
   display: flex;
-}
-
-.contacts__list {
   margin-left: auto;
 }
 
@@ -203,6 +200,11 @@ body {
 
 .contacts__icon-menu {
   margin-right: 10px;
+}
+
+.container__contacts__list {
+  display: flex;
+  margin-left: auto;
 }
 
 .hero {
@@ -410,20 +412,20 @@ body {
   padding-bottom: 30px;
 }
 
-.soc__list {
+.team__soc__list {
   display: flex;
   justify-content: center;
 }
 
-.soc__item {
+.team__soc__item {
   margin-right: 10px;
 }
 
-.soc__item:last-child {
+.team__soc__item:last-child {
   margin-right: 0px;
 }
 
-.soc__link {
+.team__soc__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -435,12 +437,12 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.soc__link--team {
+.team__soc__link--team {
   background-color: var(--hero-title-color);
   fill: #afb1b8;
 }
 
-.soc__link--team:hover, .soc__link--team:focus {
+.team__soc__link--team:hover, .team__soc__link--team:focus {
   background-color: var(--logo-color);
   fill: var(--hero-title-color);
 }
@@ -522,7 +524,7 @@ body {
   color: var(--secondary-color);
 }
 
-.logo--footer {
+.logo__part--footer {
   color: var(--hero-title-color);
 }
 
@@ -572,16 +574,41 @@ body {
   color: var(--hero-title-color);
 }
 
-.soc__icon--footer {
+.footer__soc__list {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__soc__item {
+  margin-right: 10px;
+}
+
+.footer__soc__item:last-child {
+  margin-right: 0px;
+}
+
+.footer__soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__soc__icon--footer {
   fill: currentColor;
 }
 
-.soc__link--footer {
+.footer__soc__link--footer {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--hero-title-color);
 }
 
-.soc__link--footer:hover, .soc__link--footer:focus {
+.footer__soc__link--footer:hover, .footer__soc__link--footer:focus {
   background-color: var(--logo-color);
   fill: var(--hero-title-color);
 }

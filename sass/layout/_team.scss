@@ -37,17 +37,17 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.soc__list {
+.team__soc__list {
     display: flex;
     justify-content: center;
 }
-.soc__item {
+.team__soc__item {
     margin-right: 10px;
 }
-.soc__item:last-child {
+.team__soc__item:last-child {
     margin-right: 0px;
 }
-.soc__link {
+.team__soc__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -58,7 +58,7 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.soc__link--team {
+.team__soc__link--team {
     background-color: var(--hero-title-color);
     fill: #afb1b8;
     &:hover,
